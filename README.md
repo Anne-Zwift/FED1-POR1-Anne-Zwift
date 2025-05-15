@@ -17,7 +17,7 @@ Potential viewers: Noroff, potential employers, fellow developers?
 Clean, modern, and easy to navigate. Responsive design and Html, CSS and JavaScript, applying new knowledge in my existing projects.
 
 ### Content: applying new knowledge in my existing projects.
-I will highlight three projects, show my skills (a detailed PDF will be submitted additionally), and a bit about myself. Add a contact section to those who wishes to reach me.
+I will highlight three projects, show my skills (a detailed PDF will be submitted additionally), and a bit about myself and a contact section to those who wishes to reach me.
 3 assignments to submissions:
 •	Cross Course Project (Rainydays)
 •	Semester Project 1
