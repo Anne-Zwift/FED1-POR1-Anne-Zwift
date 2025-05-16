@@ -1,0 +1,133 @@
+/*Import Google fonts - Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#000, #fff);
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  /*width: 400px;*/
+  display: block;
+  background: #000;
+  padding: 60px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #13b1ef;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 4 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: #fff;
+  background: linear-gradient(#fff, #13b1ef);
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0 18px;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.rainydays {
+  color: #13b1ef;
+  background: linear-gradient(#fff, #13b1ef);
+}
+
+.card-list .card-link .badge.project1 {
+  color: #d724f7;
+  background: linear-gradient(#fff, #ecaff7);
+}
+
+.card-list .card-link .badge.Exam1 {
+  color: #f45607;
+  background: linear-gradient(#fff, #f87d40);
+}
+
+.card-list .card-link .card-title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bolder;
+
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #13b1ef;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 3px solid #13b1ef;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #13b1ef;
+  background: #fff;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #13b1ef;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+  color: #13b1ef;
+  margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
