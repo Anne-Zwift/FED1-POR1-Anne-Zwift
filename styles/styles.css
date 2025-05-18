@@ -20,9 +20,9 @@ body {
 
 .wrapper{
   display: flex;
-  /*background: transparent;
-  margin-top: 20px;
-  margin-bottom: 40px;*/
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: 20px;
 }
 
 .wrapper .static-txt{
@@ -30,24 +30,24 @@ body {
   font-size: 24px;
   font-weight: bolder;
   width: 100px;
+  padding-top: 20px;
 }
 
 .wrapper .dynamic-txts{
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
+  margin-left: 0px;
+  height: 150px;
+  line-height: 10px;
   overflow: hidden;
 }
 
 .dynamic-txts li{
   list-style: none;
   color: #13b1ef;
-  font-size: 32px;
+  font-size: 42px;
   font-weight: bold;
   position: relative;
   top: 0;
   animation: slide 12s steps(3) infinite;
-  margin-bottom: 20px;
 }
 
 @keyframes slide {
@@ -59,18 +59,19 @@ body {
 .dynamic-txts li span{
   position: relative;
   margin: 5px 0;
-  line-height: 90px;
+  line-height: 35px;
+
 }
 
 .dynamic-txts li span::after{
   content: " ";
   position: absolute;
   left: 0;
-  height: 50%;
-  width: 100%;
+  height: 60%;
+  width: 80%;
   background: transparent;
   border-left: 2px solid #13b1ef;
-  animation: typing 8s steps(10) infinite;
+  animation: typing 8s steps(9) infinite;
 }
 
 @keyframes typing {
@@ -117,7 +118,7 @@ body {
 
 .card-list .card-link .card-image {
   width: 100%;
-  aspect-ratio: 4 / 9;
+  aspect-ratio: 6 / 13;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -158,6 +159,7 @@ body {
 .teaser-text {
   color: #fff;
   font-size: 18px;
+  font-style: italic;
   margin-top: 20px;
   margin-left: -20px;
   margin-right: -40px;
