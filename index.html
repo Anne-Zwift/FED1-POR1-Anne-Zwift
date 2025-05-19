@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
   <!-- Linking Swiper JS CSS -->
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Linking SwiperJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./javaScript/index.js" defer></script>
 
 </head>
@@ -28,12 +30,14 @@
 
   <div class="container swiper">
     <div class="wrapper">
-        <div class="static-txt">Anne - Zwift</div>
-        <ul class="dynamic-txts">
-          <li><span>Portfolio</span></li>
-          <li><span>FrontEnd</span></li>
-          <li><span>Developer</span></li>
-        </ul>
+      <div class="static-txt">Anne - Zwift</div>
+        <div class="gradient-overlay">
+          <ul class="dynamic-txts">
+            <li><span style="--index: 1;">Portfolio</span></li>
+            <li><span style="--index: 2;">FrontEnd</span></li>
+            <li><span style="--index: 3;">Developer</span></li>
+          </ul>
+        </div>
       </div> 
     <div class="card-wrapper">
       <ul class="card-list swiper-wrapper">
@@ -76,8 +80,12 @@
       <div class="swiper-slide-button swiper-button-prev"></div>
       <div class="swiper-slide-button swiper-button-next"></div>
     </div>
+      <footer class="contact-info">
+        <div>Contact information: annmat00075@stud.noroff.no</div>
+      </footer>
   </div>
-  <!-- Linking SwiperJS Script -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Linking SwiperJS Script 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
 </body>
 </html>
