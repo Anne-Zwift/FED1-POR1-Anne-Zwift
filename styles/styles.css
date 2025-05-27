@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
 
@@ -16,10 +17,87 @@ body {
   background: linear-gradient(#000000b8, #fff);
 }
 
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 4rem 15%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+/*for later*/
+#menu-icon {
+  font-size: 3.5rem;
+  color: #fff;
+  display: none;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+span {
+  color: #d724f7;
+  background: linear-gradient(270deg, #fff, #d725f7);
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-left: 4rem;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+  color: #d725f7;
+  border-bottom: 3px solid #d725f7;
+}
+
+.gradient-btn {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: linear-gradient(270deg, #fff, #d725f7);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #d121d1;
+  border: none;
+  text-wrap: nowrap;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+}
+
 /* slider presentation*/
 .card-wrapper {
   max-width: 1100px;
-  margin: 0 20px 15px;
+  margin: 240px 0 20px 15px;
   padding: 20px 10px;
   overflow: hidden;
 }
