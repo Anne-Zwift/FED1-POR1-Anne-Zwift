@@ -161,6 +161,8 @@ body {
 .card-wrapper .swiper-slide-button {
   color: #13b1ef;
   margin-top: -35px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 @media (min-width: 425px) {
