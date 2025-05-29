@@ -8,15 +8,15 @@
   <!-- Linking Google fonts for icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
   <!-- Linking Swiper JS CSS -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+ <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">-->
   <!-- Linking SwiperJS Script -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./javaScript/index.js" defer></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+  <script src="./javaScript/index.js" defer></script>
 </head>
 <body>
 <header class="header">
-  <a href="./index.html" class="logo">Annegrete<span> Mathisen</span></a>
-  <i class="" id="menu-icon"></i>
+  <a href="./index.html" class="logo">A<span> M</span></a>
+  <i class="menu-icon" id="menu-icon"></i>
   <nav class="navbar">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -27,32 +27,155 @@
 <button class="gradient-btn">Contact Me</button>
 
 </header>
-
+<!--home section-->
 <section class="home" id="home">
   <div class="home-content">
-    <h1>Hi, It's <span>Annegrete</span></h1>
+    <h1>Hi, It's <span>Anne</span></h1>
     <h3>
       I'm a <span>Front End Developer</span>
-      <p>More information</p>
     </h3>
+    <p>More information</p>
     <div class="social-icons">
       <a href="#" >
-        <i class="bx bxl-git-hub"></i>
+        <i class="GitHub"><img src="./images/github-mark-white.png" alt="GitHub logo"></i>
       </a>
       <a href="#" >
-        <i class="pxl-linkedin-square"></i>
+        <i class="material-symbols-outlined">arrow_forward</i>
       </a>
-      <div class="btn-group">
-        <a href="#" class="btn">Hire</a>
-        <a href="#contact" class="btn">Contact</a>
+    </div>
+    <div class="btn-group">
+      <a href="#" class="btn">Hire</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+  </div>
+  <div class="home-img">
+    <img src="./images/Img Me at The Mountaintop.PNG" alt="Me at the mountaintop">
+  </div>
+</section>
+
+
+<!--about section-->
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="./images/Me2.PNG" alt="">
+  </div>
+  <div class="about-content">
+    <h2>About <span>Me</span></h2>
+    <p>Here is the text</p>
+    <a href="#" class="btn">Read More</a>
+  </div>
+</section>
+
+<!--services section-->
+<section class="services" id="services">
+  <h2 class="heading">Services</h2>
+  <div class="services-container">
+    <div class="service-box">
+      <div class="service-info">
+        <i class="bx bx-code-curly">{}</i>
+        <h4>UI / UX Design</h4>
+        <p>Text here</p>
       </div>
     </div>
-  <div class="home-img">
-    <img src="images/Img-mountaintop kvadrat.PNG" alt="Me at the mountaintop">
+    <div class="service-box">
+      <div class="service-info">
+        <i class="bx bxl-code"><></i>
+        <h4>Frontend Development</h4>
+        <p>Text here</p>
+      </div>
+    </div>
+    <div class="service-box">
+      <div class="service-info">
+        <i class="bx bxl-figma">{}</i>
+        <h4>Other</h4>
+        <p>Text here</p>
+      </div>
+    </div>
   </div>
-  
 </section>
-  <div class="container swiper">
+
+<!--projects section-->
+
+<section class="projects" id="projects">
+<h2 class="heading">Projects</h2>
+<div class="projects-box">
+  <div class="project-card">
+    <img src="./images/Rainydays 2025-05-15 133506.png" alt="">
+    <h3>Project 1</h3>
+    <p>Text here</p>
+    <div class="btn">Review Project</div>
+  </div>
+    <div class="project-card">
+    <img src="./images/OSM 2025-05-15 152922.png" alt="">
+    <h3>Project 2</h3>
+    <p>Text here</p>
+    <div class="btn">Review Project</div>
+  </div>
+    <div class="project-card">
+    <img src="./images/Ride On Blog 2025-05-15 160004.png" alt="">
+    <h3>Project 3</h3>
+    <p>Text here</p>
+    <div class="btn">Review Project</div>
+  </div>
+</div>
+
+
+</section>
+
+<!--contact section-->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact<span>Me</span></h2>
+  <form action="">
+    <div class="input-group">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Phone Number">
+        <input type="text" placeholder="Subject">
+      </div>
+    </div>
+
+    <div class="input-group-2">
+      <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </div>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="social-icons">
+    <a href="#" >
+      <i class="GitHub"><img src="./images/github-mark-white.png" alt="GitHub logo"></i>
+    </a>
+    <a href="#" >
+      <i class="material-symbols-outlined">arrow_forward</i>
+    </a>
+  </div>
+  <ul class="list">
+    <li>
+      <a href="#">FAQ</a>
+    </li>
+    <li>
+      <a href="#services">Services</a>
+    </li>
+    <li>
+      <a href="#about">About Me</a>
+    </li>
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
+    <li>
+      <a href="#contact">Contact Me</a>
+    </li>
+  </ul>
+    <p class="copyright">
+      &copy;2025 AM | All Rights Reserved
+    </p>
+</footer>
+
+  <!--<div class="container swiper">
     <div class="card-wrapper">
       <ul class="card-list swiper-wrapper">
         <li class="card-item swiper-slide">
@@ -93,6 +216,6 @@
       <div class="swiper-slide-button swiper-button-prev"></div>
       <div class="swiper-slide-button swiper-button-next"></div>
     </div>
-  </div>
+  </div>-->
 </body>
 </html>

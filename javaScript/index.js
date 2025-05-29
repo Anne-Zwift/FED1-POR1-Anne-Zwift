@@ -1,4 +1,4 @@
-new Swiper('.card-wrapper', {
+/*new Swiper('.card-wrapper', {
   loop: true,
   spaceBetween: 30,
 
@@ -27,4 +27,4 @@ new Swiper('.card-wrapper', {
       slidesPerView: 3
     },
   }
-});
+});*/
