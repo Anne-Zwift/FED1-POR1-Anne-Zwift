@@ -395,11 +395,15 @@ object-fit: contain;
 .project-card h3 {
   color: #fff;
   font-size: 3rem;
+  margin-top: 10px;
 }
 
 .project-card p {
+  max-width: 300px;
   color: #fff;
   font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* contact presentation*/
