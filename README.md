@@ -9,7 +9,7 @@ Portfolio 3 Projects
 
 ### Purpose & Audience: 
 Who will be viewing my portfolio? 
-Potential viewers: Noroff, potential employers, fellow developers?
+Potential viewers: Noroff, potential employers, fellow developers.
     
 ### Design & Layout: 
 Clean, modern, and easy to navigate. Responsive design and Html, CSS and JavaScript, applying new knowledge in my existing projects.
