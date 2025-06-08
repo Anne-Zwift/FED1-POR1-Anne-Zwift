@@ -405,6 +405,18 @@ object-fit: contain;
   margin-bottom: 10px;
 }
 
+.github-links {
+  max-width: 300px;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.github-links:hover {
+  font-size: large;
+}
+
 /* contact presentation*/
   .contact {
     background-color: antiquewhite;
