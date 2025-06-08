@@ -1,39 +1,16 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+let gradientBtn = document.querySelector('.gradient-btn');
+let contactSection = document.querySelector('#contact');
 
-menuIcon.onclick = () => {
+menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
-}
+});
 
+gradientBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  contactSection.scrollIntoView({ behavior: "smooth"});
+  //gradientBtn.classList.toggle("clicked");
+});
 
-/*new Swiper('.card-wrapper', {
-  loop: true,
-  spaceBetween: 30,
-
-  // Pagination bullets
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // responsive breakpoints
-  breakpoints: {
-    0: {
-      slidesPerView: 1
-    },
-     768: {
-      slidesPerView: 2
-    },
-     1024: {
-      slidesPerView: 3
-    },
-  }
-});*/
