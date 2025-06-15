@@ -162,7 +162,7 @@ object-fit: contain;
 .material-symbols-outlined {
   font-size: 2rem;
   color: #fff;
-  transform: rotate(-45deg);
+  transform: rotate(-90deg);
 }
 
 .social-icons a {
