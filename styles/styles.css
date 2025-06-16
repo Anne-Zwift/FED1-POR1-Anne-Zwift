@@ -1,6 +1,12 @@
 /*Import Google fonts - Roboto*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+  --primary-color: #f45607;
+  --black: #000;
+  --white: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#000000, #fff);
+  background: linear-gradient(var(--black), var(--white));
 }
 
 html {
@@ -40,7 +46,7 @@ html {
 /*for later*/
 #menu-icon {
   font-size: 3.5rem;
-  color: #fff;
+  color: var(--white);
   display: none;
 }
 
@@ -57,7 +63,7 @@ html {
 }
 
 span {
-  color: #f45607;
+  color: var(--primary-color);
   background: linear-gradient(270deg, #fff, #f45607);
   background-clip: text;
   color: transparent;
@@ -65,7 +71,7 @@ span {
 
 .navbar a {
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--white);
   margin-left: 4rem;
   font-weight: bold;
   transition: 0.3s ease-in-out;
@@ -73,7 +79,7 @@ span {
 }
 
 .navbar a:hover {
-  color: #f45607;
+  color: var(--primary-color);
   border-bottom: 3px solid #f45607;
 }
 
@@ -195,7 +201,7 @@ object-fit: contain;
 .btn {
   display: inline-block;
   padding: 1rem 3rem;
-  background-color: #f45607;
+  background-color: var(--primary-color);
   box-shadow: 0 0 25px #f45607;
   border-radius: 3rem;
   font-size: 1.8rem;
