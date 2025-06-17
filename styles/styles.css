@@ -61,7 +61,7 @@ html {
 
 .logo {
   font-size: 3rem;
-  color: #fff;
+  color: var(--white);
   font-weight: bolder;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -73,7 +73,7 @@ html {
 
 span {
   color: var(--primary-color);
-  background: linear-gradient(270deg, #fff, #f45607);
+  background: linear-gradient(270deg, var(--white), var(--primary-color));
   background-clip: text;
   color: transparent;
 }
@@ -89,14 +89,14 @@ span {
 
 .navbar a:hover {
   color: var(--primary-color);
-  border-bottom: 3px solid #f45607;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .gradient-btn {
   font-size: 1.8rem;
   padding: 1rem 2rem;
   border-radius: 3rem;
-  background: linear-gradient(270deg, #fff, #f45607);
+  background: linear-gradient(270deg, var(--white), var(--primary-color));
   letter-spacing: 1px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -137,7 +137,7 @@ section {
 .home-content h1 {
   font-size: 8rem;
   font-weight: bolder;
-  color: #fff;
+  color: var(--white);
   margin-top: 1.5rem;
   line-height: 1;
 }
@@ -145,7 +145,7 @@ section {
 .home-content h3 {
   margin: 1rem 0;
   font-size: 4rem;
-  color: #fff;
+  color: var(--white);
 }
 
 .home-content p {
@@ -158,12 +158,12 @@ section {
 .home-img img {
   width: 32vw;/*32% of vw width*/
   border-radius: 50%;
-  box-shadow: 0 0 25px #f45607;
+  box-shadow: 0 0 25px var(--primary-color);
   transition: 0.4s ease-in-out;
 }
 
 .home-img img:hover {
-  box-shadow: 0 0 25px #f45607, 0 0 50px #f45607, 0 0 100px #f45607;
+  box-shadow: 0 0 25px var(--primary-color), 0 0 50px var(--primary-color), 0 0 100px var(--primary-color);
   transition: 0.4s ease-in-out;
 }
 
@@ -176,7 +176,7 @@ object-fit: contain;
 
 .material-symbols-outlined {
   font-size: 2rem;
-  color: #fff;
+  color: var(--white);
   transform: rotate(-90deg);
 }
 
@@ -188,18 +188,18 @@ object-fit: contain;
   font-size: 1rem;
   padding: 1rem;
   background: transparent;
-  border: 2px solid #f45607;
+  border: 2px solid var(--primary-color);
   border-radius: 50%;
-  color: #f45607;
+  color: var(--primary-color);
   margin: 3rem 0.5rem;
   transition: 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
-  color: #fff;
-  background-color: #000;
+  color: var(--white);
+  background-color: var(--black);
   transform: scale(1.2)translateY(-5px);/*gets bigger and move to the top at the same time*/
-  box-shadow: 0 0 25px #f45607;
+  box-shadow: 0 0 25px var(--primary-color);    
 }
 
 .btn-group {
@@ -211,10 +211,10 @@ object-fit: contain;
   display: inline-block;
   padding: 1rem 3rem;
   background-color: var(--primary-color);
-  box-shadow: 0 0 25px #f45607;
+  box-shadow: 0 0 25px var(--primary-color);
   border-radius: 3rem;
   font-size: 1.8rem;
-  color: #000;
+  color: var(--black);
   border: 2px solid transparent;
   font-weight: bold;
   transition: 0.3s ease-in-out;
@@ -222,21 +222,21 @@ object-fit: contain;
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px #f45607,
-              0 0 50px #f45607;
+  box-shadow: 0 0 25px var(--primary-color),
+              0 0 50px var(--primary-color);
 }
 
 .btn-group a:nth-of-type(2) {
-  background-color: #000;
-  color: #f45607;
-  border: 2px solid #f45607;
+  background-color: var(--black);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
   box-shadow: 0 0 25px transparent;
 }
 
 .btn-group a:nth-of-type(2):hover {
-  box-shadow: 0 0 25px #f45607;
-  background-color: #f45607;
-  color: #000;
+  box-shadow: 0 0 25px var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--black);
 }
 
 /*about section*/
@@ -246,20 +246,20 @@ object-fit: contain;
   justify-content: center;
   align-items: center;
   gap: 10rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .about-img img{
   width: 32vw;
   border-radius: 26px;
   rotate: -10deg;
-  box-shadow: 0 0 25px #f45607;
+  box-shadow: 0 0 25px var(--primary-color);
   transition: 0.4s ease-in-out;
 }
 
 .about-img img:hover {
-  box-shadow: 0 0 25px #f45607,
-              0 0 50px #f45607;
+  box-shadow: 0 0 25px var(--primary-color),
+              0 0 50px var(--primary-color);
 }
 
 .about-content h2 {
@@ -280,11 +280,11 @@ object-fit: contain;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #f45607;
+  background-color: var(--primary-color);
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: var(--black);
 }
 
 /*services section*/
@@ -299,11 +299,11 @@ object-fit: contain;
   display: flex;
   flex-direction: column;
   background-color: #0000008e;
-  color: #000;
+  color: var(--black);
 }
 
 .services h2 {
-  color: #fff;
+  color: var(--white);
 }
 
 .services-container {
@@ -317,7 +317,7 @@ object-fit: contain;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f45607;
+  background-color: var(--primary-color);
   min-height: 600px;
   border-radius: 3rem;
   cursor: pointer;
@@ -326,9 +326,9 @@ object-fit: contain;
 }
 
 .service-box:hover {
-  background: #000;
-  color: #f45607;
-  border-color: 5px solid #f45607;
+  background: var(--black);
+  color: var(--primary-color);
+  border-color: 5px solid var(--primary-color);
   transform: scale(1.03);
 }
 
@@ -361,7 +361,7 @@ object-fit: contain;
 
 .projects {
   color: #fff;
-  background-color: #000;
+  background-color: var(--black);
 }
 
 .projects-box {
@@ -381,20 +381,20 @@ object-fit: contain;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #000;
-  border: 2px solid #f45607;
+  background-color: var(--black);
+  border: 2px solid var(--primary-color);
   border-radius: 3rem;
   gap: 2rem;
   padding: 5rem 2rem;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 0 5px #f45607;
+  box-shadow: 0 0 5px var(--primary-color);
   transition: 0.3s ease;
 }
 
 .project-card:hover {
-  box-shadow: 0 0 25px #f45607,
-              0 0 50px #f45607;
+  box-shadow: 0 0 25px var(--primary-color),
+              0 0 50px var(--primary-color);
               transform: scale(1.02);
 }
 
@@ -438,7 +438,7 @@ object-fit: contain;
 
   .contact h2 {
     margin-bottom: 3rem;
-    color: #000;
+    color: var(--black);
   }
 
   .contact form {
@@ -458,7 +458,7 @@ object-fit: contain;
     color: black;
     background-color: antiquewhite;
     border-radius: 2rem;
-    border: 2px solid #f45607;
+    border: 2px solid var(--primary-color);
     margin: 1.5rem 0;
     resize: none;
   }
@@ -473,7 +473,7 @@ object-fit: contain;
 }
 
 .footer .social-icons a{
-  background-color: #000;
+  background-color: var(--black);
 }
 
 .footer ul {
@@ -487,13 +487,13 @@ object-fit: contain;
 }
 
 .footer ul li a {
-  color: #f45607;
+  color: var(--primary-color);
   border-bottom: 3px solid transparent;
   transition: 0.3s ease-in-out;
 }
 
 .footer ul li a:hover {
-  border-bottom: 3px solid #f45607;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .footer .copyright {
@@ -516,8 +516,8 @@ object-fit: contain;
     padding: 1rem 3rem;
     background: rgba(0, 0, 0, 0.8);
     border-bottom-left-radius: 2rem;
-    border-left: 2px solid #f45607;
-    border-bottom: 2px solid #f45607;
+    border-left: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
     display: none;
   }
 
