@@ -7,6 +7,15 @@
   --white: #fff;
 }
 
+/*To improve accessibility, add a focus outline to interactive elements*/ 
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -394,7 +403,6 @@ object-fit: contain;
   min-height: 600px;
   object-fit: cover;
   border-radius: 2em;
-  object-fit: cover;
 }
 
 .project-card h3 {
